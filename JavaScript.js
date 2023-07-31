@@ -4,7 +4,7 @@ let factorial = (number) =>{
     {
         factMultiplication*=i
     }
-    console.log(factMultiplication)
+    return factMultiplication
 }
 
 let primeNumber = (number) =>{
@@ -13,14 +13,14 @@ let primeNumber = (number) =>{
     {
         if (number%i==0)
         {
-            console.log("It is not a Prime Number")
+            return "It is not a Prime Number"
             isPrime=0
             break
         }
     }
     if(isPrime==1)
     {
-        console.log("It is a Prime Number");
+        return"It is a Prime Number"
     }
 }
 
@@ -34,7 +34,7 @@ let fibonacci = ()=>{
         firstNumber=secondNumber
         secondNumber=sumOfNumber
     }
-    console.log(sumOfNumber)
+    return sumOfNumber
 }
 
 let evenOddZero=(arrayNumber)=>{
